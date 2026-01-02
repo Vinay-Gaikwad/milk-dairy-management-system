@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@drawable/rounded_dialog"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content">
+
+    <!-- प्रोफाइल आयकॉन -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_user_profile"
+        android:background="@drawable/round_background"
+        android:padding="16dp"
+        android:contentDescription="प्रोफाइल" />
+
+    <!-- वापरकर्ता कोड -->
+    <EditText
+        android:id="@+id/usernameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:hint="कोड" />
+
+    <!-- मोबाईल नंबर -->
+    <EditText
+        android:id="@+id/joiningDateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/transparent"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="मोबाईल नंबर"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <!-- लॉगआउट बटन -->
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="लॉगआउट"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF" />
+
+    <!-- बंद करा बटन -->
+    <Button
+        android:id="@+id/closePopupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="बंद करा"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

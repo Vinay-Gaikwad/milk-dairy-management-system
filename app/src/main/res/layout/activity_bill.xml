@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- Bottom Nav FIRST -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#121212"
+        android:weightSum="2"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:id="@+id/btnHomeContainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/home_icon" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="मुख्यपृष्ठ" android:textSize="12sp" android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnViewCustomersContainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/entry" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="नवीन नोंद" android:textSize="12sp" android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Main Card Layout -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:id="@+id/layoutBill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tvFirmName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="दूध संस्था ढवळेवाडी"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000" />
+
+                <TextView android:id="@+id/tvDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#000000" />
+                <TextView android:id="@+id/tvTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#000000" />
+                <TextView android:id="@+id/tvShift" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#000000" />
+                <TextView android:id="@+id/tvCustomerNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#000000" />
+                <TextView android:id="@+id/tvMilk" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#000000" />
+                <TextView android:id="@+id/tvFatSnf" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#000000" />
+                <TextView android:id="@+id/tvRateTotal" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvFooter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="धन्यवाद!"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="16dp" />
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnSharePdf"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/shape"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:src="@drawable/share"
+                        app:elevation="6dp" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnPrint"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginStart="24dp"
+                        android:background="@drawable/shape"
+                        android:backgroundTint="@android:color/holo_green_dark"
+                        android:src="@drawable/printer"
+                        app:elevation="6dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

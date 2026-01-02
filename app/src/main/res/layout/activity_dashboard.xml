@@ -1,0 +1,416 @@
+<!-- activity_dashboard.xml (Localized in Marathi) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/background"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/welcomeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:text="स्वागत आहे, वापरकर्ता"
+                        android:textColor="@color/material_dynamic_secondary90"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/profileIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_user_profile"
+                        android:background="@drawable/round_background"
+                        android:padding="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:contentDescription="प्रोफाइल आयकॉन"/>
+                </RelativeLayout>
+
+
+
+                <!-- Milk Summary Card -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/summaryCardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardElevation="6dp"
+                        android:layout_marginTop="5dp"
+                        card_view:cardCornerRadius="12dp"
+                        card_view:cardBackgroundColor="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="आजचे दूध संकलन:"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="#000000" />
+                            <EditText
+                                android:id="@+id/dateText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="आजची तारीख: 04-एप्रिल-2025"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:cursorVisible="false"/>
+                            <TextView
+                                android:id="@+id/shiftText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="शिफ्ट: सकाळ"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:layout_marginTop="4dp"/>
+
+
+                            <!-- Cow Section -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="गाय"
+                                android:textStyle="bold"
+                                android:textColor="#4CAF50"
+                                android:textSize="16sp"
+                                android:layout_marginTop="12dp" />
+
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Liters"
+                                    android:textColor="#757575" />
+                                <TextView
+                                    android:id="@+id/cowTotalLiters"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12.5 L"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:textColor="#000" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Amount"
+                                    android:textColor="#757575" />
+                                <TextView
+                                    android:id="@+id/cowTotalAmount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="₹ 438.00"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:textColor="#000" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Entries"
+                                    android:textColor="#757575" />
+                                <TextView
+                                    android:id="@+id/cowTotalEntries"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:textColor="#000" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                            <!-- Buffalo Section -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="म्हैस"
+                                android:textStyle="bold"
+                                android:textColor="#795548"
+                                android:textSize="16sp"
+                                android:layout_marginTop="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Liters"
+                                    android:textColor="#757575" />
+                                <TextView
+                                    android:id="@+id/buffaloTotalLiters"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="13.0 L"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:textColor="#000" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Amount"
+                                    android:textColor="#757575" />
+                                <TextView
+                                    android:id="@+id/buffaloTotalAmount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="₹ 451.00"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:textColor="#000" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Entries"
+                                    android:textColor="#757575" />
+                                <TextView
+                                    android:id="@+id/buffaloTotalEntries"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:textColor="#000" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/shareSummaryBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:elevation="0dp"
+                        android:contentDescription="शेअर करा"
+                        android:src="@drawable/share" />
+                </FrameLayout>
+
+                <!-- Add Entry / View Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="2"
+                    android:layout_marginBottom="16dp">
+
+                    <Button
+                        android:id="@+id/addEntryBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="नोंद जोडा"
+                        android:backgroundTint="#388E3C"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:layout_marginEnd="8dp"/>
+
+                    <Button
+                        android:id="@+id/viewRecordsBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="नोंदी पहा"
+                        android:textSize="15dp"
+                        android:backgroundTint="#0288D1"
+                        android:textColor="#fff"
+                        android:layout_marginStart="8dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="अलीकडील दूध संकलन"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/recentEntriesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lineChartCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="24dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#FFF3E0">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="24dp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Footer Options -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnNewCustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/add_customer"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="नवीन ग्राहक"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="नवीन ग्राहक जोडा"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnCustomerData"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/list_customer"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="ग्राहक डेटा"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ग्राहक पाहा"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+

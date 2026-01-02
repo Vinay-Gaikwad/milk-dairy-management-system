@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        android:gravity="top">
+
+        <!-- App Logo -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="45dp"
+            android:src="@drawable/final_logo" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="तुमचे खाते उघडा"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="-50dp" />
+
+        <!-- Label: Code -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="कोड टाका:"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp" />
+
+        <!-- Code Input -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/etSoftCustNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:background="@android:color/white" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Label: Mobile -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="मोबाईल नंबर"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Mobile Input with +91 Prefix -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingEnd="8dp" />
+
+                <EditText
+                    android:id="@+id/etMob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Sign In Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="लॉगिन"
+            android:textColor="@color/black"
+            android:background="@drawable/button_shape" />
+
+        <!-- Footer -->
+        <TextView
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developed by Sanade Infotech"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp" />
+    </LinearLayout>
+</ScrollView>

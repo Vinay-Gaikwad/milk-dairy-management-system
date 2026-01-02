@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D2B52"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 तारीख: -- | वेळ: --"
+            android:textColor="#000"
+            android:background="#fff"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ग्राहक क्रमांक"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/etCustomerNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="#fff"
+            android:padding="10dp"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ग्राहकाचे नाव"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="#fff"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="लिटर"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etLiter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="#fff"
+            android:padding="10dp"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="फॅट"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etFat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="#fff"
+            android:padding="10dp"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="एसएनएफ"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etSNF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="#fff"
+            android:padding="10dp"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/tvRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="रेट: 0.00"
+            android:textColor="#fff"
+            android:paddingTop="10dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="एकूण: 0.00"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="अपडेट करा"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="रद्द करा"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#F44336"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

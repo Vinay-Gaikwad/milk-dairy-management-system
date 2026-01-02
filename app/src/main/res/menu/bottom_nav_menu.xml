@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_new_customer"
+        android:icon="@drawable/customer_a_fragment"
+        android:title="New Customer" />
+    <item
+        android:id="@+id/nav_view_customers"
+        android:icon="@drawable/customer_s_fragment"
+        android:title="View Customers" />
+</menu>

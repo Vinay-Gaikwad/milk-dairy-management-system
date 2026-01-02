@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964110480702",
+    "project_id": "milkrun-cb5c9",
+    "storage_bucket": "milkrun-cb5c9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964110480702:android:4af50eae10e93922e5286f",
+        "android_client_info": {
+          "package_name": "com.milk.milkrun"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFV1UHTxexNUeMoZas7LMsnDJ3yXXCXXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

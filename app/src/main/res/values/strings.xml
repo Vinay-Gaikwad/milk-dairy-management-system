@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Milk Collector</string>
+    <string-array name="search_types">
+        <item>Date</item>
+        <item>Customer No</item>
+        <item>Shift</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Custom App Theme -->
+    <style name="Theme.MilkRun" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="BillText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_marginBottom">4dp</item>
+
+    </style>
+    <color name="card_background">#FFFFFF</color>
+    <color name="title_text">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="subtitle_text">#444444</color>
+    <color name="input_label">#000000</color>
+    <style name="MaterialDatePicker_Light" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+
+    </style>
+
+
+</resources>
